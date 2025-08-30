@@ -12,9 +12,12 @@ Este proyecto es un **sistema experto** desarrollado en **Python**, que ayuda a 
 
 sistema-experto-bicicletas/
 │── app.py # Código principal en Flask + CLIPSPY
-│── templates/
-│ └── Experto.html # Interfaz web
-│── static/ # (opcional) Archivos CSS/JS si quieres personalizar
+│
+├── templates/
+│ └── experto.html # Interfaz web
+│
+├── static/ # (opcional) Archivos CSS/JS si quieres personalizar
+
 
 ## 🚀 Instalación y ejecución
 
