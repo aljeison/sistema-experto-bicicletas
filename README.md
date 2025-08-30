@@ -1,4 +1,4 @@
-🚲 Sistema Experto de Diagnóstico para Bicicletas
+## 🚲 Sistema Experto de Diagnóstico para Bicicletas
 Este proyecto es un **sistema experto** desarrollado en **Python**, que ayuda a diagnosticar problemas comunes en bicicletas mediante un motor de reglas basado en **CLIPSPY** y una interfaz web con **Flask**.
 
 ## ✨ Características
@@ -44,9 +44,9 @@ CLIPSPY  (motor de reglas basado en CLIPS)
 1. Se muestran varias casillas con posibles anomalias (ejemplo: llanta baja, cadena suelta, frenos flojos, etc.).
 2. Se selecciona las anomalias que coinciden con la situación de su bicicleta.
 3. Al hacer clic en Diagnosticar, el sistema:
-Procesa las selecciones ingresadas.
-Aplica un conjunto de reglas de diagnóstico predefinidas.
-Genera una o más recomendaciones automáticas (ejemplo: inflar la llanta, ajustar frenos, revisar la cadena, centrar la rueda).
+- Procesa las selecciones ingresadas.
+- Aplica un conjunto de reglas de diagnóstico predefinidas.
+- Genera una o más recomendaciones automáticas (ejemplo: inflar la llanta, ajustar frenos, revisar la cadena, centrar la rueda).
 4. Finalmente, las recomendaciones se muestran en pantalla para que el usuario pueda tomar acción.
 
 ## 🛠️ Requisitos previos
