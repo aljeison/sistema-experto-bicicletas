@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Experto - Taller de Bicicletas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            margin-top: 40px;
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+            width: 450px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 12px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        input[type="checkbox"] {
+            transform: scale(1.2);
+            margin-right: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            background: #27ae60;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #1e8449;
+        }
+
+        .result {
+            margin-top: 25px;
+            padding: 20px;
+            background: #ecf9f6;
+            border-left: 5px solid #27ae60;
+            border-radius: 8px;
+        }
+
+        .result h3 {
+            margin-top: 0;
+            color: #27ae60;
+        }
+
+        .result ul {
+            padding-left: 20px;
+        }
+
+        .result li {
+            margin: 8px 0;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚲 Diagnóstico de Bicicletas</h1>
+        <form method="POST">
+            <label><input type="checkbox" name="llanta_baja"> La llanta está desinflada</label>
+            <label><input type="checkbox" name="cadena_suelta"> La cadena se sale</label>
+            <label><input type="checkbox" name="frenos_flojos"> Los frenos no responden bien</label>
+            <label><input type="checkbox" name="ruido_pedales"> Se escuchan ruidos en los pedales</label>
+            <label><input type="checkbox" name="rueda_vibra"> La rueda vibra al rodar</label>
+            <label><input type="checkbox" name="marchas_mal"> Problemas al cambiar de marcha</label>
+            <button type="submit">🔍 Diagnosticar</button>
+        </form>
+
+        {% if diagnosticos %}
+        <div class="result">
+            <h3>Resultado del diagnóstico:</h3>
+            <ul>
+                {% for diag in diagnosticos %}
+                    <li>{{ diag }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
