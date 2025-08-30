@@ -10,6 +10,7 @@ Este proyecto es un **sistema experto** desarrollado en **Python**, que ayuda a 
 - Regla combinada: si hay **llanta baja + rueda que vibra**, recomienda *“Revisar neumático y ajustar la rueda”*.
 
 ## 📂 Estructura del proyecto
+
 sistema-experto-bicicletas/
 │── app.py # Código principal en Flask + CLIPSPY
 │── templates/
@@ -35,20 +36,20 @@ python app.py
 La aplicación se iniciará en:
 👉 http://127.0.0.1:5000/
 
-🛠 Tecnologías utilizadas
+## 🛠 Tecnologías utilizadas
 Python
 Flask
 CLIPSPY  (motor de reglas basado en CLIPS)
 
-💡 Funcionamiento
+## 💡 Funcionamiento
 Selecciona .
 Haz clic en Calcular para obtener la velocidad recomendada del ventilador basada en las reglas de lógica difusa.
 Visualiza los grados de pertenencia y las funciones difusas en gráficas interactivas.
 
-🛠️ Requisitos previos
+## 🛠️ Requisitos previos
 Python 3 instalado (se recomienda crear un virtualenv).
 
-📜 Licencia
+## 📜 Licencia
 
 Este proyecto se distribuye bajo la licencia MIT.
 Eres libre de usarlo, modificarlo y compartirlo.
